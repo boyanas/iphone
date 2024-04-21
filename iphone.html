@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iphone.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.png" alt="#" width="40px">
+        <ul>
+            <li><a href="#">ACCULE</a></li>
+            <li><a href="#">SHOPE</a></li>
+            <li><a href="#">APLLE</a></li>
+        </ul>
+    </header>
+    <div class="all">
+        <div id="tit">
+            <h2>IPHONE 13 PRO MAX</h2> <p>for you my brother </p> 
+        </div>
+        <div id="gold">
+            <img id="gl" src="0.png" alt="" width="230px">
+        </div>
+    </div>
+    <div class="icons">
+        <img onclick="phones(this.src);colors('#000')"  src="0.png" alt="" width="70px">
+        <img onclick="phones(this.src);colors('#247ec8')"  src="1.png" alt="" width="70px">
+        <img onclick="phones(this.src);colors('#1e1e1e')"  src="2.png" alt="" width="70px">
+        <img onclick="phones(this.src);colors('#c79b53')"  src="3.png" alt="" width="70px">
+        <img onclick="phones(this.src);colors('#c82525')"  src="4.png" alt="" width="70px">
+        
+    </div>
+
+    <script>
+        var img = document.getElementById('gl')
+     
+        function phones(x){
+            img.src = x
+        }
+
+        function colors(y){
+            document.body.style.background = y
+        }
+    </script>
+</body>
+</html>
